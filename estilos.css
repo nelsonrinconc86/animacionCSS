@@ -1,3 +1,7 @@
+/*https://css3generator.com/ */
+/*https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations*/
+
+
 div{
     border: 1px solid;
     border-radius: 20px;
@@ -25,6 +29,7 @@ div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 
     
 }
@@ -43,7 +48,7 @@ div{
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 2cm;
+    
 }
 
 .redes{
@@ -65,6 +70,7 @@ div{
     
 
 }
+
 .elementos{
     position: relative;
     top: 15%;
@@ -72,9 +78,14 @@ div{
     display: block;
     padding: 5px 5px;
     justify-content: space-between;
+    align-items: flex-end;
     background-color: red;
+    transition:linear;
+    
 }
 .elementos:hover{
     background-color: aqua;
+    transition: background 5s ease-in;
     
+
 }
