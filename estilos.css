@@ -17,7 +17,7 @@ div{
 .encabezado{
     border: 1px solid;
     border-radius: 20px;
-    height: 3cm;
+    height: auto;
     margin-bottom: 1%;
     padding: 1%;
     position: relative;
@@ -29,7 +29,7 @@ div{
 }
 .logo{
     width: 55%;
-    height: 1cm;
+    height: 3cm;
     padding: 0.5%;
 }
 
@@ -43,4 +43,10 @@ div{
     width: 20%;
     height: 1cm;
     padding: 0.5%;
+}
+
+.items{
+    list-style: none;
+    list-style-position: inside;
+
 }
