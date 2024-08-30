@@ -77,16 +77,160 @@ div{
     padding: 5px 5px;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: red;
-    transition:all 0.5s ease;
-    
+    background-color: rgb(0, 255, 21);   
+    transition: background-color 0.5s ease-in 0.2s;
 }
-.elementos:hover{
+.elementos:hover{    
     background-color: aqua;
     color:red;
     border-radius: 50%;
     text-transform: uppercase;
-    
-    
-
 }
+
+.elementos a:hover{
+    color: black;
+    text-shadow: 20px 20px 20px black;
+}
+
+.transform-container {
+    perspective: 1000px; /* Añade perspectiva para las transformaciones 3D */
+}
+
+/* Estilos del box transformado */
+.transform-box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    margin: 50px;
+    transition: transform 0.5s ease;
+}
+
+/* Aplicación de transformaciones */
+.transform-box:hover {
+    /* Transformaciones 2D y 3D aplicadas de manera combinada */
+    transform: translateX(100px) translateY(50px) translateZ(30px)
+               rotate(30deg) rotateX(15deg) rotateY(25deg)
+               scaleX(1.5) scaleY(1.5) scaleZ(1.2)
+               skewX(10deg) skewY(10deg)
+               matrix(1, 0.3, -0.2, 1, 0, 0)
+               /* Para ver claramente el efecto de matrix3d, se puede descomentar */
+               matrix3d(1, 0.2, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 100, 0, 1)
+}
+
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/* Estilos para las letras */
+.letter {
+    position: absolute;
+    font-size: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+    animation: bounce 10s infinite;
+    height: auto;
+}
+
+/* Definición de animación de rebote */
+@keyframes bounce {
+    0% {
+        transform: translateX(20px) translateY(20px);
+    }
+    25% {
+        transform: translateX(calc(300px)) translateY(calc(200px));
+    }
+    /*
+    50% {
+        transform: translateX(calc(100% - 24px)) translateY(calc(100% - 24px));
+    }
+    75% {
+        transform: translateX(0) translateY(calc(100% - 24px));
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}*/
+
+/* Estilos adicionales para dispersar las letras */
+/*
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+.letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.letter:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.letter:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.letter:nth-child(10) {
+    animation-delay: 0.9s;
+}
+.letter:nth-child(11) {
+    animation-delay: 1s;
+}
+.letter:nth-child(12) {
+    animation-delay: 1.1s;
+}
+.letter:nth-child(13) {
+    animation-delay: 1.2s;
+}
+.letter:nth-child(14) {
+    animation-delay: 1.3s;
+}
+.letter:nth-child(15) {
+    animation-delay: 1.4s;
+}
+.letter:nth-child(16) {
+    animation-delay: 1.5s;
+}
+.letter:nth-child(17) {
+    animation-delay: 1.6s;
+}
+.letter:nth-child(18) {
+    animation-delay: 1.7s;
+}
+.letter:nth-child(19) {
+    animation-delay: 1.8s;
+}
+.letter:nth-child(20) {
+    animation-delay: 1.9s;
+}
+.letter:nth-child(21) {
+    animation-delay: 2s;
+}
+.letter:nth-child(22) {
+    animation-delay: 2.1s;
+}
+.letter:nth-child(23) {
+    animation-delay: 2.2s;
+}
+.letter:nth-child(24) {
+    animation-delay: 2.3s;
+}
+*/
