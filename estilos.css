@@ -1,4 +1,46 @@
-.class{
+div{
     border: 1px solid;
+    border-radius: 20px;
+}
+
+.Principal{
+    border: none;
     box-shadow: 3px 3px 3px burlywood;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+
+}
+.encabezado{
+    border: 1px solid;
+    border-radius: 20px;
+    height: 3cm;
+    margin-bottom: 1%;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+.logo{
+    width: 55%;
+    height: 1cm;
+    padding: 0.5%;
+}
+
+.menu{
+    width: 25%;
+    height: 1cm;
+    padding: 0.5%;
+}
+
+.redes{
+    width: 20%;
+    height: 1cm;
+    padding: 0.5%;
 }
