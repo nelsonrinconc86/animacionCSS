@@ -1,6 +1,7 @@
 div{
     border: 1px solid;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .Principal{
@@ -34,9 +35,15 @@ div{
 }
 
 .menu{
+    border: none;
     width: 25%;
     height: 1cm;
     padding: 0.5%;
+    background-color: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 2cm;
 }
 
 .redes{
@@ -47,6 +54,27 @@ div{
 
 .items{
     list-style: none;
-    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-position: outside;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    
 
+}
+.elementos{
+    position: relative;
+    top: 15%;
+    /*border: 1px solid;*/
+    display: block;
+    padding: 5px 5px;
+    justify-content: space-between;
+    background-color: red;
+}
+.elementos:hover{
+    background-color: aqua;
+    
 }
