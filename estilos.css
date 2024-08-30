@@ -73,19 +73,20 @@ div{
 
 .elementos{
     position: relative;
-    top: 15%;
-    /*border: 1px solid;*/
     display: block;
     padding: 5px 5px;
     justify-content: space-between;
     align-items: flex-end;
     background-color: red;
-    transition:linear;
+    transition:all 0.5s ease;
     
 }
 .elementos:hover{
     background-color: aqua;
-    transition: background 5s ease-in;
+    color:red;
+    border-radius: 50%;
+    text-transform: uppercase;
+    
     
 
 }
