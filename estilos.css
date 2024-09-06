@@ -2,10 +2,24 @@
 /*https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations*/
 
 
-div{
+.formularios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border: 1px solid;
-    border-radius: 20px;
-    overflow: hidden;
+    width: 50%;
+    height: max-content;
+    padding: 2%;
+
+}
+#boton_enviar{
+    box-shadow: 2px 2px 2px black;
+    margin-top: 3%;
+
+}
+.form-control .cajas_sombras{
+    box-shadow: 5px 5px 5px black;
 }
 
 .Principal{
