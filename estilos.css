@@ -5,6 +5,11 @@
     text-shadow: 5px 5px 5px red;
     aling:center;
 }
+div[class=card-body]{
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px white;
+    margin-button: 2%;
+}
 
 .formularios{
     position: relative;
