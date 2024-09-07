@@ -2,7 +2,7 @@
 /*https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations*/
 
 [class="card-title"]{
-    box-shadow: 5px 5px 5px white;
+    box-shadow: 5px 5px 5px red;
 }
 
 .formularios{
